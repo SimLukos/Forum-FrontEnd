@@ -1,0 +1,34 @@
+.questionWrapper {
+  background-color: #f0a04b;
+  margin: 2rem;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.author {
+  font-family: "Phudu", cursive;
+  font-size: x-large;
+  color: #183a1d;
+  padding: 5px;
+}
+
+.topic {
+  font-family: "Source Serif Pro", serif;
+  font-size: larger;
+  color: #183a1d;
+  padding: 5px;
+}
+
+.dateWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.date {
+  padding: 10px;
+  font-family: "Source Serif Pro", serif;
+  color: #183a1d;
+}

@@ -1,0 +1,11 @@
+.input {
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f0a04b;
+  color: #183a1d;
+  font-size: larger;
+  font-family: "Source Serif Pro", serif;
+}

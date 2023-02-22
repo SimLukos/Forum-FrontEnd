@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  padding: 30px;
+  border-bottom: solid 15px #183a1d;
+}
+
+.infoWrapper {
+  width: 20%;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.userWrapper {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,16 @@
+.title {
+  width: auto;
+  padding: 30px 30px 10px 30px;
+}
+
+.title h1 {
+  color: #183a1d;
+  font-family: "Phudu", cursive;
+}
+
+.buttonWrapper {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem;
+  width: 50%;
+}

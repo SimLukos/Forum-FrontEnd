@@ -1,0 +1,30 @@
+.enterWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90%;
+  margin: auto;
+}
+
+.enterWrapper h4 {
+  font-family: "Source Serif Pro", serif;
+  font-size: x-large;
+  color: #183a1d;
+}
+
+.enterWrapper textarea {
+  border: none;
+  border-radius: 5px;
+  background-color: #e1eedd;
+  font-family: "Source Serif Pro", serif;
+  color: #183a1d;
+  font-size: x-large;
+  padding: 10px;
+  resize: none;
+}
+
+.buttonWrapper {
+  display: flex;
+  width: 30%;
+  gap: 1rem;
+}

@@ -1,0 +1,47 @@
+.questionWrapper {
+  background-color: #eaa760;
+  margin: 2rem;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.questionWrapper:hover {
+  cursor: pointer;
+  background-color: #e38016;
+}
+
+.author {
+  font-family: "Phudu", cursive;
+  font-size: x-large;
+  color: #183a1d;
+  padding: 5px;
+}
+
+.topic {
+  font-family: "Source Serif Pro", serif;
+  font-size: larger;
+  color: #183a1d;
+  padding: 5px;
+}
+
+.dateWrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.date {
+  padding: 10px;
+  font-family: "Source Serif Pro", serif;
+  color: #183a1d;
+  font-size: 15px;
+}
+
+.answersNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

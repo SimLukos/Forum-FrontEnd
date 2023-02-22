@@ -1,0 +1,12 @@
+.heading {
+  font-family: "Source Serif Pro", serif;
+  font-size: larger;
+  color: #183a1d;
+}
+
+.underHeading {
+  font-family: "Source Serif Pro", serif;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #183a1d;
+}

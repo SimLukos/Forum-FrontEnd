@@ -1,0 +1,14 @@
+.wrongWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 60%;
+}
+
+.wrong {
+  color: brown;
+  font-size: 20px;
+  font-family: "Source Serif Pro", serif;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}

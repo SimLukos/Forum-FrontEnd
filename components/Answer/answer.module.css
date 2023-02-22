@@ -1,0 +1,52 @@
+.answerWrapper {
+  background-color: #e1eedd;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 90%;
+}
+
+.author {
+  font-family: "Phudu", cursive;
+  font-size: x-large;
+  color: #183a1d;
+  padding: 5px;
+}
+
+.answer {
+  font-family: "Source Serif Pro", serif;
+  font-size: larger;
+  color: #183a1d;
+  padding: 5px;
+}
+
+.dateWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.date {
+  padding: 10px;
+  font-family: "Source Serif Pro", serif;
+  color: #f0a04b;
+}
+
+.deleteWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px 5px 5px;
+  align-items: center;
+}
+
+.bin {
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.bin:hover {
+  background-color: #f0a04b;
+  cursor: pointer;
+}
