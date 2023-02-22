@@ -5,9 +5,11 @@ import cookies from "js-cookie";
 import { useRouter } from "next/router";
 import { FaUser } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import { useEffect, useState } from "react";
 
 export default function Header({ userName }) {
   const router = useRouter();
+  const [user, setUser] = useState("");
 
   function handleLogOutClick() {
     cookies.remove(`token`);
@@ -15,6 +17,10 @@ export default function Header({ userName }) {
 
     router.push(`/`);
   }
+
+  useEffect(() => {
+    setUser(cookies.get(`userName`));
+  }, []);
 
   return (
     <div className={styles.header}>
@@ -32,6 +38,7 @@ export default function Header({ userName }) {
               <FaUser />
             </div>
           </IconContext.Provider>
+          <h1>{user}</h1>
         </div>
 
         <Button onClick={handleLogOutClick} text={"Log Out"} />

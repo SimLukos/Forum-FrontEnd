@@ -111,6 +111,9 @@ export default function questionAndAnswers({ question, answers }) {
                 date={element.date}
                 key={element._id}
                 id={element._id}
+                rating={element.rating}
+                liked={element.liked}
+                disliked={element.disliked}
               />
             );
           })}

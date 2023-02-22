@@ -1,0 +1,51 @@
+.rate {
+  display: grid;
+  grid-template-rows: 33% auto 33%;
+  margin-right: 10px;
+}
+
+.like {
+  border-right: 2px solid #183a1d5c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10px;
+}
+
+.like:hover {
+  background-color: #f0a04b;
+  cursor: pointer;
+}
+
+.like div {
+  padding: 10px;
+}
+
+.rateNumber {
+  border-top: 2px solid #183a1d5c;
+  border-right: 2px solid #183a1d5c;
+  border-bottom: 2px solid #183a1d5c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #183a1d;
+  font-family: "Phudu", cursive;
+  font-size: x-large;
+}
+
+.dislike {
+  border-right: 2px solid #183a1d5c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+}
+
+.dislike:hover {
+  background-color: #f0a04b;
+  cursor: pointer;
+}
+
+.dislike div {
+  padding: 10px;
+}

@@ -3,8 +3,8 @@
   margin: auto;
   padding: 10px;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 10% auto;
   margin-top: 2rem;
   width: 90%;
 }
