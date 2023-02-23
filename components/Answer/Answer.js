@@ -87,6 +87,10 @@ export default function Answer({
       setLike(true);
     } else if (disliked.includes(userName)) {
       setDislike(true);
+    } else if (!liked.includes(userName)) {
+      setLike(false);
+    } else if (!disliked.includes(userName)) {
+      setDislike(false);
     }
   });
 

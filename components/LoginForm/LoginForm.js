@@ -5,7 +5,6 @@ import Wrong from "../Wrong/Wrong";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import axios from "axios";
-import { setCookie } from "cookies-next";
 import cookies from "js-cookie";
 
 export default function Form() {
@@ -33,7 +32,7 @@ export default function Form() {
             password: userPassword,
           })
           .then((response) => {
-            setShowIncorrect(true);
+            setShowIncorrect(false);
             setFill(false);
 
             cookies.set("token", response.data.jwt_token);
