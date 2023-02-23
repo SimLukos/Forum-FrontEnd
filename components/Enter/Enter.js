@@ -1,5 +1,5 @@
 import styles from "./enter.module.css";
-import Button from "../Button/Button";
+import { Button } from "../imports";
 
 export default function Enter({ text, cancel, submit, onChange }) {
   return (

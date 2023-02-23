@@ -1,6 +1,5 @@
 import styles from "./header.module.css";
-import Title from "../Title/Title";
-import Button from "../Button/Button";
+import { Title, Button } from "../imports";
 import cookies from "js-cookie";
 import { useRouter } from "next/router";
 import { FaUser } from "react-icons/fa";

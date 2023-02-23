@@ -7,7 +7,6 @@ export default function Question({ author, date, topic, id, numberAnswers }) {
   const router = useRouter();
 
   function handleClick() {
-    console.log("clicked");
     router.push(`/question/${id}`);
   }
 
