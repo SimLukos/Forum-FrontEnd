@@ -1,8 +1,5 @@
 import styles from "@/styles/Home.module.css";
-import Title from "@/components/Title/Title";
-import Description from "@/components/Description/Description";
-import RegisterForm from "../../components/RegisterForm/RegisterForm";
-import Footer from "@/components/Footer/Footer";
+import { RegisterForm, Footer, Description, Title } from "@/components/imports";
 
 export default function Home() {
   return (

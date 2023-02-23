@@ -1,6 +1,5 @@
 import styles from "./registerForm.module.css";
-import Input from "../Input/Input";
-import Button from "../Button/Button";
+import { Input, Button } from "../imports";
 import axios from "axios";
 import { useState } from "react";
 import { useRouter } from "next/router";

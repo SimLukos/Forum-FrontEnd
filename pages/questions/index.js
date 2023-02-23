@@ -1,20 +1,25 @@
 import styles from "./questions.module.css";
-import Header from "@/components/Header/Header";
-import Question from "@/components/QuestionInList/QuestionInList";
 import axios from "axios";
-import Enter from "../../components/Enter/Enter";
-import Button from "@/components/Button/Button";
 import { getCookie } from "cookies-next";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import cookies from "js-cookie";
-import Footer from "@/components/Footer/Footer";
+import {
+  Footer,
+  DropDown,
+  Button,
+  Enter,
+  QuestionInList,
+  Header,
+} from "@/components/imports";
 
 export default function Questions({ questions }) {
   const [showEnter, setShowEnter] = useState(false);
   const [value, setValue] = useState("");
   const [cookieToken, setCookieToken] = useState("");
   const [cookieName, setCookieName] = useState("");
+  const [open, setOpen] = useState(false);
+  const [renderedQuestions, setRenderedQuestions] = useState(questions);
 
   const router = useRouter();
 
@@ -28,6 +33,45 @@ export default function Questions({ questions }) {
 
   function handleCancel() {
     setShowEnter(false);
+  }
+
+  function handleOpen() {
+    setOpen(!open);
+  }
+
+  function handleAll() {
+    //  setFilter("all");
+    setRenderedQuestions(questions);
+    setOpen(false);
+  }
+
+  function handleAnswered() {
+    // setFilter("answered");
+    const answered = questions.filter(
+      (question) => question.answers.length > 0
+    );
+    setRenderedQuestions(answered);
+
+    setOpen(false);
+  }
+
+  function handleUnanswered() {
+    // setFilter("unanswered");
+    const answered = questions.filter(
+      (question) => question.answers.length === 0
+    );
+    setRenderedQuestions(answered);
+    setOpen(false);
+  }
+
+  function handlePersonal() {
+    // setFilter("personal");
+
+    const answered = questions.filter(
+      (question) => question.author === cookieName
+    );
+    setRenderedQuestions(answered);
+    setOpen(false);
   }
 
   useEffect(() => {
@@ -64,6 +108,14 @@ export default function Questions({ questions }) {
       <div className={styles.questionsWrapper}>
         <div className={styles.buttonWrapper}>
           <Button onClick={handleEnter} text={"Ask Question"} />
+          <DropDown
+            handleAll={handleAll}
+            handleAnswered={handleAnswered}
+            handleUnanswered={handleUnanswered}
+            handlePersonal={handlePersonal}
+            open={open}
+            trigger={handleOpen}
+          />
         </div>
         {showEnter ? (
           <Enter
@@ -77,10 +129,9 @@ export default function Questions({ questions }) {
           <h1>Asked Questions</h1>
         </div>
         <div className={styles.questionList}>
-          {questions.map((element) => {
-            console.log(element.answers.length);
+          {renderedQuestions.map((element) => {
             return (
-              <Question
+              <QuestionInList
                 author={element.author}
                 topic={element.topic}
                 date={element.date}

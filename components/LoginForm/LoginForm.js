@@ -1,7 +1,5 @@
 import styles from "./loginForm.module.css";
-import Input from "../Input/Input";
-import Button from "../Button/Button";
-import Wrong from "../Wrong/Wrong";
+import { Input, Button, Wrong } from "../imports";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import axios from "axios";

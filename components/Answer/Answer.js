@@ -5,8 +5,7 @@ import { FaTrash } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Rate from "../Rate/Rate";
-import { headers } from "@/next.config";
+import { Rate } from "../imports";
 
 export default function Answer({
   author,
