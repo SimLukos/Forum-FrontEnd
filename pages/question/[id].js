@@ -1,14 +1,16 @@
 import axios from "axios";
-import Header from "@/components/Header/Header";
-import Question from "@/components/Question/Question";
-import Answer from "@/components/Answer/Answer";
+import {
+  Header,
+  Question,
+  Answer,
+  Button,
+  Enter,
+  Footer,
+} from "../../components/imports";
 import styles from "./styles.module.css";
-import Button from "@/components/Button/Button";
-import EnterAnswer from "@/components/Enter/Enter";
 import { useEffect, useState } from "react";
 import cookies from "js-cookie";
 import { useRouter } from "next/router";
-import Footer from "@/components/Footer/Footer";
 
 export default function questionAndAnswers({ question, answers }) {
   const [showEnter, setShowEnter] = useState(false);
@@ -94,7 +96,7 @@ export default function questionAndAnswers({ question, answers }) {
           ) : null}
         </div>
         {showEnter ? (
-          <EnterAnswer
+          <Enter
             text={"answer"}
             onChange={handleValue}
             submit={handleSubmit}
