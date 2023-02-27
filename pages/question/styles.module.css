@@ -10,9 +10,10 @@
 
 .buttonWrapper {
   display: flex;
+  justify-content: flex-start;
   gap: 2rem;
-  margin: 2rem;
-  width: 50%;
+  margin: 2rem auto;
+  width: 20%;
 }
 
 @media screen and (max-width: 500px) {

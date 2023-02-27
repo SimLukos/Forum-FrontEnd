@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   width: 90%;
+  box-shadow: 10px 10px 21px -4px rgba(0, 0, 0, 0.75);
 }
 
 .questionWrapper:hover {
