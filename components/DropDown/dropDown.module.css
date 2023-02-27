@@ -11,6 +11,7 @@
   width: auto;
   border-radius: 10px;
   background-color: #e1eedd;
+  z-index: 999;
 }
 
 .menu > li {

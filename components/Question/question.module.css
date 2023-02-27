@@ -1,10 +1,11 @@
 .questionWrapper {
   background-color: #f0a04b;
-  margin: 2rem;
+  margin: auto;
   padding: 10px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 90%;
 }
 

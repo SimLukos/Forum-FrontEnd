@@ -22,3 +22,12 @@
   margin: 2rem;
   width: 50%;
 }
+
+@media screen and (max-width: 500px) {
+  .buttonWrapper {
+    width: 90%;
+    flex-direction: column;
+    margin: 2rem auto;
+    gap: 0.5rem;
+  }
+}

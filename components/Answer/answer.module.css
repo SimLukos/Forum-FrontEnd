@@ -9,6 +9,13 @@
   width: 90%;
 }
 
+@media screen and (max-width: 500px) {
+  .answerWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 .author {
   font-family: "Phudu", cursive;
   font-size: x-large;

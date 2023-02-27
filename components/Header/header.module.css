@@ -1,13 +1,21 @@
 .header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   width: auto;
   padding: 30px;
   border-bottom: solid 15px #183a1d;
 }
 
+@media screen and (max-width: 500px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .infoWrapper {
-  width: 30%;
+  width: auto;
   display: flex;
   gap: 30px;
   align-items: center;
